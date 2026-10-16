@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 1 - HTML5 Validation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Task 0</a>
+    <a href="task1.html">Task 1</a>
+    <a href="task2.html">Task 2</a>
+    <a href="task3.html">Task 3</a>
+    <a href="task4.html">Task 4</a>
+  </nav>
+
+  <main>
+    <h1>Task 1: HTML5 Validation</h1>
+
+    <form class="basic-form" method="get">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name"
+             required minlength="2" maxlength="50">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email"
+             required maxlength="100">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5"
+                required minlength="10" maxlength="500"></textarea>
+
+      <p>Name: 2–50 characters. Message: 10–500 characters.</p>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
